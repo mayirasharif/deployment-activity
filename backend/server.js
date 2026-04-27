@@ -5,7 +5,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-function calculate(expression) {
+export const function calculate(expression) {
   const normalized = expression.replace(/×/g, '*').replace(/÷/g, '/');
 
   const tokens = normalized.match(/(\d+\.?\d*|\.\d+|[+\-*/])/g);
