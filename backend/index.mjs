@@ -1,5 +1,5 @@
 
-import { calculate } from "./server.js";
+import { calculate } from "./calculate.js";
 
 export const handler = async (event) => {
   const { a, b } = JSON.parse(event.body);
